@@ -6,6 +6,7 @@ app.controller('weatherCtrl', function($scope, $http) {
   };
   $scope.myFunc = function () {
 
+    $scope.IsVisible = $scope.IsVisible = true;
 
     $http.get("http://ip-api.com/json").then(function (data) {
       vm.cityName
@@ -25,6 +26,10 @@ app.controller('weatherCtrl', function($scope, $http) {
 
     });
   };
+
+  // $scope.ShowHide = function(){
+  //   $scope.IsVisible = $scope.IsVisible = true;
+  // };
 
 });
 

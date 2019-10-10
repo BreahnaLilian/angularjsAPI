@@ -10,7 +10,7 @@
     <h1>{{channelInfo.heading}}</h1>
     <input type="text" ng-model="cityName">
     <input type="button" value="Search" ng-click="myFunc()">
-        <div>
+        <div ng-show = "IsVisible">
             <p>Name of city: {{nameOfCity}}</p>
             <p>Temperature: {{temp}}</p>
             <p>Description: {{description}}</p>
